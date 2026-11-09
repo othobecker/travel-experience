@@ -1,31 +1,14 @@
-const botaoCriar = document.getElementById("botaoCriar")
-const botaoApagar = document.getElementById("botaoApagar")
+const formEstilo = document.getElementById("formEstilo")
+const campocor = document.getElementById("campoCor")
+const campoPadding = document.getElementById("campoPadding")
+const campoTamanho = document.getElementById("campoTamanho")
 const retorno = document.getElementById("retorno")
 
-const frases = [
-    "Você está arrasando! 🚀",
-    "Hora de codar! 💻",
-    "Café, código e criatividade! ☕",
-    "JavaScript é mágica! 🌟"
-];
-const cores = ["#fde68a, #bfdbfe, #bbf7d0, #fbcfe8"]
+function aplicarEstilo(event){
+    event.preventDefault()
 
-  botaoCriar.addEventListener("click", () => {
-    const i = Math.floor(Math.random() * frases.length);
-    retorno.textContent = frases[i];
-    retorno.style.backgroundColor = cores[i];
-    retorno.style.fontSize = "24px";
-    retorno.style.padding = "15px";
-    retorno.style.borderRadius = "10px";
-    retorno.style.textAlign = "center";
-});
-
- botaoApagar.addEventListener("click", () => {
-    const i = Math.floor(Math.random() * frases.length);
-    retorno.textContent = frases[i];
-    retorno.style.backgroundColor = cores[i];
-    retorno.style.fontSize = "0px";
-    retorno.style.padding = "0px";
-    retorno.style.borderRadius = "0px";
-    retorno.style.textAlign = "center";
- })
+    retorno.style.color = campocor.value
+    retorno.style.padding = campoPadding.value + "px"
+    retorno.style.fontSize = campoTamanho.value + "px"
+}
+formEstilo.addEventListener("submit", aplicarEstilo)
