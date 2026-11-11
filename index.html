@@ -8,56 +8,51 @@
 </head>
 <body>
    
-    <header>
-        <h1>👕 Loja de roupas do Otho Becker👚</h1>
-    </header>
-    <main class="carrossel">
+ <header>
+    <h1>👕 Loja de Roupas</h1>
+ </header>
+ <main class="area-contato">
+    <form class="formulario">
+        <h2>Fale com a gente</h2><br>
+        <label for="nome">Nome:</label><br><br>
+        <input type="text" id="nome" placeholder="Digite seu nome" required minlength="3"><br><br>
+        <label for="email">E-mail</label><br><br>
+        <input type="email" id="email" placeholder="seu@gmail.com" required><br><br>
+        <label for="telefone">Telefone:</label><br><br>
+        <input type="tel" id="telefone" placeholder="(51) 99999-9999"><br><br>
+        <label for="nascimento">Data de Nascimento:</label><br><br>
+        <input type="date" id="nascimento" required><br><br>
+        <label for="tamanho"Tamanho> (Número de 34 a 46)</label><br><br>
+        <input type="number" id="tamnho" min="34" max="46" step="2" placeholder="ex: 38"><br><br>
+        <label for="produto">Produto de interesse</label>
+        <select id="produto" required>
+            <option value="">Escolha um produto</option>
+            <option value="camiseta">Camiseta</option>
+            <option value="calca">Calça</option>
+            <option value="jaqueta">Jaqueta</option>
+            <option value="tenis">Tênis</option>
+            <option value="vestido">Vestido</option>
+    </select>
+    <fieldset>
+        <legend>Forma de contato preferido</legend>
+        <label><input type="radio" name="contato" value="email" checked>E-mail</label>
+        <label><input type="radio" name="contato" value="telefone" checked>Telefone</label>
+        <label><input type="radio" name="contato" value="whatsapp" checked>Whatsapp</label>
+    </fieldset>
+    <fieldset>
+        <legend>interesses</legend>
+        <label><input type="checkbox" name="interesse" value="promocoes">Promoções</label>
+         <label><input type="checkbox" name="interesse" value="novidades">Novidades</label>
+        <label><input type="checkbox" name="interesse" value="eventos">Eventos</label>
+    </fieldset>
+    <label for="mensagem">Mensagem</label>
+    <Textarea name="mensagem" id="mensagem"
+    placeholder="Escreva sua dúvida" maxlength="200"></Textarea>
 
-         <div class="trilho">
-
-            <div class="slide">
-                
-          <img src="img/15_03_49_370_15_8_6_673_camiseta20oversized20preta20masculina203.webp" alt="Camiseta Bittersweet Memories">
-                <h2>Camiseta Bittersweet Memories</h2>
-                <p class="preco">R$69,99</p>
-        </div>
-       <br>
-        <div class="slide">
-                <img src="/img/13_56_33_685_13_7_8_812_moletom20lolja20flanelado201320lentes20yun20li2020.webp" alt="Moletom 13 lentes de um final feliz">
-                <h2>Moletom 13 lentes de um final feliz</h2>
-                <p>R$170,00</p>
-        </div>
-        <br>
-        <div class="slide">
-            <img src="img/Calca-baggy-masculina-prison-track-ziper-preta-costas.webp" alt="calça básica preta">
-            <h2>Calça baggy Preta</h2>
-            <p>R$45,00</p>
-        </div>
-        <br>
-        <div class="slide">
-            <img src="img/D_NQ_NP_716147-MLB76812058131_062024-O-patitenis-tnis-vira-patins-com-apenas-um-boto-rodinha-ro.webp" alt="Tênis patins">
-            <h2>tênis de patins</h2>
-            <p>R$800,00</p>
-        </div>
-        <br>
-        <div class="slide">
-            <img src="img/images.jpg" alt="Vestido de casamento">
-            <h2>Vestido de casamento</h2>
-            <p>R$550,90</p>
-        </div>
+    <button type="submit">Enviar</button>
 
 
-
-
-
-
-        </div>
-    </main>
-    
-    
-    
-    
-    <script src="js/script.js"></script>
-
+    </form>
+ </main>
 </body>
 </html>
